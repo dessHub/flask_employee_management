@@ -1,0 +1,45 @@
+{% import "bootstrap/utils.html" as utils %}
+{% extends "base.html" %}
+{% block title %}Employees{% endblock %}
+{% block body %}
+<div class="content-section">
+  <div class="outer">
+    <div class="middle">
+      <div class="inner">
+  
+        {% if department %}
+        <h1 style="text-align:center;">{{ department.name }} Employees</h1>
+        {%endif%}
+         {% if employees %}
+          <hr class="intro-divider">
+          <div class="center">
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th width="15%"> Name </th>
+                  <th width="30%"> Role </th>
+                </tr>
+              </thead>
+              <tbody>
+              {% for employee in employees %}
+
+                    <tr>
+                      <td> {{ employee.first_name }} {{ employee.last_name }} </td>
+                      <td>
+                          {{ employee.department.name }}
+
+                      </td>
+
+                    </tr>
+
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
