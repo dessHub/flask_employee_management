@@ -16,6 +16,15 @@ a:hover, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:h
   color: #687430;
 }
 
+footer {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
 .alert-info {
     width: 50%;
     margin: auto;
@@ -56,7 +65,8 @@ a:hover, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:h
 }
 
 .intro-header {
-    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
     background: url(../img/intro-bg.jpeg) no-repeat center center;
@@ -66,7 +76,8 @@ a:hover, .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:h
 
 .intro-message {
     position: relative;
-    margin: 0;
+    padding-top: 20%;
+    padding-bottom: 20%;
 }
 
 .intro-message > h1 {
